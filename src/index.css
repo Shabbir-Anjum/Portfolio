@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    body{
+        @apply text-textColor bg-bgColor font-Roboto;
+    }
+
+    /* section{
+        @apply pt-20 pb-4 md:p-20;
+    } */
+}
+@layer utilities{
+    .nav_hover{
+        @apply hover:text-greenColor ease-in duration-200;
+    }
+    .title{
+        @apply text-5xl font-bold;
+    }
+    .btn{
+        @apply hover:bg-navbgColor ease-in duration-200 text-center cursor-pointer rounded-md text-greenColor border border-greenColor;
+    }
+    .experience_nav{
+        @apply py-4 px-10 border-b-2 md:border-l-2  md:border-b-0  hover:bg-navbgColor hover:border-greenColor nav_hover;
+    }
+}
