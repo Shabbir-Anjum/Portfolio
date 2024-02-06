@@ -4,10 +4,12 @@ import React, { useState } from "react";
 import ExData from "./ExperienceData";
 
 export default function Experience() {
+  
   const [exp, setexp] = useState("smit");
+
   return (
     <>
-      <div className="md:w-[80%] p-6 md:10 w-full  md:ml-28 overflow-hidden">
+      <div id="experience" className="md:w-[80%] p-6 md:ml-12 w-full lg:ml-28 overflow-hidden">
         <div className=" whitespace-nowrap py-10">
           <span className="text-greenColor">02.</span>
           <h2 className="text-3xl font-bold text-head_Color px-3 inline-block">

@@ -20,23 +20,23 @@ export default function Navbar() {
           <ul className="flex text-center flex-col gap-10 text-sm justify-center items-center py-1  mt-1 md:flex-row ">
           <li className='md:inline-block'>
                 <div className='md:inline text-greenColor '>01.</div>
-                <a href="#" className='nav_hover'>About</a>
+                <a href="#about" className='nav_hover'>About</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>02.</div>
-                <a  href="#" className='nav_hover'>Experience</a>
+                <a  href="#experience" className='nav_hover'>Experience</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>03.</div>
-                <a href="#" className='nav_hover'>Work</a>
+                <a href="#work" className='nav_hover'>Work</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>04.</div>
-                <a href="#" className='nav_hover'>Contact</a>
+                <a href="#contact" className='nav_hover'>Contact</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>05.</div>
-                <a href="#" className='nav_hover'>Blog</a>
+                <a href="#blog" className='nav_hover'>Blog</a>
               </li>
         </ul>
             <div onClick={nav_show} className='absolute right-9 text-greenColor md:hidden text-xl top-9'>

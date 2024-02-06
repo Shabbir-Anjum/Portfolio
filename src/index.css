@@ -25,4 +25,5 @@
     .experience_nav{
         @apply py-4 px-10 border-b-2 md:border-l-2  md:border-b-0  hover:bg-navbgColor hover:border-greenColor nav_hover;
     }
+    
 }

@@ -8,11 +8,13 @@ export default {
   ],
   theme: {
     screens:{
+      mini:'300px',
       sm: '480px',
       md: '768px',
       lg: '1024px',
       xl:'1150px',
-      xxl: '1400px'
+      xxl: '1400px',
+      xxxl: '1500px',
     },
     extend: {
       colors:{
