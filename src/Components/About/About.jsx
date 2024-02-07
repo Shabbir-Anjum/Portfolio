@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       <div id="about" className="md:w-[80%] m-auto p-6 md:ml-12 w-full lg:ml-28 overflow-hidden">
-       
+      <AnimationControls>
         <div className=" whitespace-nowrap py-10">
           <span className="text-greenColor">01.</span>
           <h2 className="text-3xl font-bold text-head_Color px-3 inline-block">
@@ -50,7 +50,7 @@ export default function About() {
           </div>
         
         </div>
-       
+        </AnimationControls>
       </div>
     </>
   );

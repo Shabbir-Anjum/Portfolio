@@ -1,16 +1,28 @@
 import { faBarsStaggered, faX } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
+import Headroom from 'react-headroom';
 
 export default function Navbar() {
     const [hide, sethide]= useState(false);
+    // const [navbar, setnavbar]= useState(true);
+    // const show_navbar_onScroll=()=>{
+    //   if(window.scrollY >= 96){
+    //     setnavbar(true)
+    //   }
+    //   else{
+    //     setnavbar(false)
+    //   }
+    // }
+    // window.addEventListener('scroll', show_navbar_onScroll)
     const nav_show=()=>{
         sethide(()=>!hide)
     }
   return (
     <>
-    <header className='sticky z-50 top-0 '>
-        <div className='bg-bgColor flex  justify-between   text-head_Color h-24 items-center px-8  '>
+    <Headroom>
+    <header className={` sticky top-0  z-50`}>
+        <div className='bg-bgColor  flex  justify-between   text-head_Color h-24 items-center px-8  '>
         <div>
           <a href="#">
             <img src="/src/images/logo.png" alt="error" className='w-8 h-8'/>
@@ -53,6 +65,7 @@ export default function Navbar() {
         </div>
       </div>
       </header>
+      </Headroom>
     </>
   )
 }
