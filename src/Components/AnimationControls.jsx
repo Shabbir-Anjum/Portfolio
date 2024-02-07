@@ -1,40 +1,32 @@
 import React, { useEffect, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-const AnimationControls = () => {
+import { motion, useAnimation, useInView } from 'framer-motion';
+const AnimationControls = ({children, width='fit-content'}) => {
     const controls = useAnimation();
-    const ref = useRef();
+    const ref = useRef(null);
+    const isInview= useInView(ref,{once: true})
   
     useEffect(() => {
-      const handleScroll = () => {
-        // Get the distance of the element from the top of the viewport
-        const distanceFromTop = ref.current.getBoundingClientRect().top;
-        // Trigger animation when the element comes into view
-        if (distanceFromTop < window.innerHeight) {
-          controls.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-        }
-      };
-  
-      // Add event listener for scroll
-      window.addEventListener('scroll', handleScroll);
-      
-      // Remove event listener when component unmounts
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [controls]);
+      if(isInview){
+        controls.start('visible')
+      }
+    }, [isInview]);
   
     return (
-      <div style={{ height: '100vh' }}>
-        <div ref={ref}>
+      <span ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+       
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+          variants={{
+            hidden:{opacity: 0, y: 75},
+            visible:{opacity: 1, y: 0},
+          }}
+            initial="hidden"
             animate={controls}
+            transition={{duration: 0.5, delay: 0.35}}
           >
-            <h1>This will animate on scroll</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            {children}
           </motion.div>
-        </div>
-      </div>
+       
+      </span>
     );
   };
   

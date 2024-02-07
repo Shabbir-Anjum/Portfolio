@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OtherProjectData from "./OtherProjectData";
+import AnimationControls from "../AnimationControls";
 
 export default function OtherProject() {
   const [showall, setshowall]= useState(false);
@@ -22,12 +23,15 @@ export default function OtherProject() {
   }
   return (
     <div id='blog' className="md:w-[80%] overflow-hidden my-40 m-auto p-6 md:ml-12 w-full lg:ml-28">
+      <AnimationControls>
       <div className="title text-center text-head_Color">Other Projects</div>
-
+      </AnimationControls>
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3 my-20">
         {items.map((value, index) => (
+ <AnimationControls>
           <div className="p-6 bg-navbgColor rounded-md">
+           
             <div className="flex justify-between">
               <div className=" text-greenColor">
                 <FontAwesomeIcon icon={faFolder} />
@@ -43,7 +47,9 @@ export default function OtherProject() {
               {value.projectInfo}
             </p>
             <div>{value.tools}</div>
+           
           </div>
+           </AnimationControls>
         ))}
       </div>
     <div className="mx-auto  w-36">

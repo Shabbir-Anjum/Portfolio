@@ -2,6 +2,7 @@ import { faCaretRight, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import ExData from "./ExperienceData";
+import AnimationControls from "../AnimationControls";
 
 export default function Experience() {
   
@@ -10,6 +11,7 @@ export default function Experience() {
   return (
     <>
       <div id="experience" className="md:w-[80%] p-6 md:ml-12 w-full lg:ml-28 overflow-hidden">
+        <AnimationControls>
         <div className=" whitespace-nowrap py-10">
           <span className="text-greenColor">02.</span>
           <h2 className="text-3xl font-bold text-head_Color px-3 inline-block">
@@ -83,6 +85,7 @@ export default function Experience() {
           })}
           
         </div>
+        </AnimationControls>
       </div>
     </>
   );

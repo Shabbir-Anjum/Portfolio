@@ -9,7 +9,8 @@ export default function Navbar() {
     }
   return (
     <>
-        <div className='bg-bgColor flex justify-between  text-head_Color h-24 items-center px-8  '>
+    <header className='sticky z-50 top-0 '>
+        <div className='bg-bgColor flex  justify-between   text-head_Color h-24 items-center px-8  '>
         <div>
           <a href="#">
             <img src="/src/images/logo.png" alt="error" className='w-8 h-8'/>
@@ -51,6 +52,7 @@ export default function Navbar() {
             </div>
         </div>
       </div>
+      </header>
     </>
   )
 }
