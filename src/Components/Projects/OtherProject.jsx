@@ -27,11 +27,11 @@ export default function OtherProject() {
       <div className="title text-center text-head_Color">Other Projects</div>
       </AnimationControls>
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3  my-20">
+      <div className="grid grid-cols-1 place-items-center md:grid-cols-2 gap-6 lg:grid-cols-3  my-20">
         {items.map((value, index) => (
- <AnimationControls>
+     <AnimationControls>
           <div className="p-6 w- bg-navbgColor rounded-md">
-           
+       
             <div className="flex justify-between">
               <div className=" hover:text-greenColor">
              <a href="#">   <FontAwesomeIcon icon={faFolder} /></a>
@@ -47,9 +47,9 @@ export default function OtherProject() {
               {value.projectInfo}
             </p>
             <div>{value.tools}</div>
-           
+          
           </div>
-           </AnimationControls>
+          </AnimationControls>
         ))}
       </div>
     <div className="mx-auto  w-36">
