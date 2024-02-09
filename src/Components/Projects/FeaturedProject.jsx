@@ -26,9 +26,9 @@ export default function FeaturedProject() {
           
           <div className="md:py-24 lg:py-16">
     
-            <div className=" w-full h-72 md:h-48 xxl:w-[580px] xxxl:w-[800px] xl:w-[500px] lg:h-56 md:w-80 lg:w-96 relative  md:bg-imageColor opacity-30 md:hover:bg-current ease-in-out duration-400  transition-all">
+            <div className=" w-full h-72 md:h-48 xxl:w-[580px] xxxl:w-[800px] xl:w-[500px] lg:h-56 md:w-80 lg:w-96 relative  md:bg-imageColor opacity-25 md:opacity-70 md:hover:bg-current ease-in-out duration-400  transition-all">
               <img
-                src="/src/images/Shabbiranjum.jpg"
+                src={value.src}
                 alt="error"
                 className="w-full h-full absolute object-cover md:mix-blend-overlay"
               />
@@ -45,17 +45,16 @@ export default function FeaturedProject() {
             
        
               <div className="md:mx-6">
-                <FontAwesomeIcon icon={faGithub} className="px-2"/>
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="px-2"/>
+                <a href={value.link} target="_blank" className=" hover:text-greenColor"> <FontAwesomeIcon icon={faGithub} className="px-2"/></a>
+               
+                <a href={value.link} target="_blank" className=" hover:text-greenColor"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className="px-2"/></a>
               </div>
           
             </div>
            
             <div className={`${value.id==2 ? 'md:right-0 text-end' : 'md:left-2'} py-3 absolute md:w-[300px] mini:mx-8 mini:full sm:mx-8 text-head_Color top-24  xxl:[650px] xxxl:w-[740px] lg:px-8 lg:w-96 xl:w-[500px]  md:p-3 md:bg-navbgColor md:rounded-lg`}>
           
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                nihil maxime vero consequuntur neque sit? Magni quibusdam libero
-                iusto optio non maiores nostrum aspernatur
+             {value.projectInfo}
              
               </div>
             

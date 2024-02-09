@@ -10,7 +10,7 @@ export default function Experience() {
 
   return (
     <>
-      <div id="experience" className="md:w-[80%] p-6 md:ml-12 w-full lg:ml-28 overflow-hidden">
+      <div id="experience" className="md:w-[80%] py-32 p-6 md:ml-12 w-full lg:ml-28 overflow-hidden">
         <AnimationControls>
         <div className=" whitespace-nowrap py-10">
           <span className="text-greenColor">02.</span>
@@ -64,13 +64,13 @@ export default function Experience() {
                         {value.company}
                       </span>
                     </a>
-                    <div>{value.date}</div>
+                    <div className="mb-5">{value.date}</div>
                     {value.content.map((item, index) => (
                       <ul class="list-non" key={index}>
                         <li class="flex items-center mb-2">
                           <FontAwesomeIcon
                             icon={faCaretRight}
-                            className=" text-greenColor"
+                            className=" text-greenColor  mr-3"
                           />
                           {item}
                         </li>

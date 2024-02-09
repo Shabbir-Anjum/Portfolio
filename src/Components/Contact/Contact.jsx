@@ -16,7 +16,7 @@ export default function Contact() {
           aspernatur, suscipit
         </div>
         <div className=" my-20">
-          <a href="#" className="py-5 px-10 btn  w-52">
+          <a href="mailto:marshabbir768@gmail.com" className="py-5 px-10 btn  w-52">
             Say Hello
           </a>
         </div>

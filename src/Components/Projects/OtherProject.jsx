@@ -22,25 +22,25 @@ export default function OtherProject() {
     setshowall(!showall);
   }
   return (
-    <div id='blog' className="md:w-[80%] overflow-hidden my-40 m-auto p-6 md:ml-12 w-full lg:ml-28">
+    <div id='blog' className="md:w-[80%] overflow-hidden my-32 m-auto p-6 md:ml-12 w-full lg:ml-28">
       <AnimationControls>
       <div className="title text-center text-head_Color">Other Projects</div>
       </AnimationControls>
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3 my-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3  my-20">
         {items.map((value, index) => (
  <AnimationControls>
-          <div className="p-6 bg-navbgColor rounded-md">
+          <div className="p-6 w- bg-navbgColor rounded-md">
            
             <div className="flex justify-between">
-              <div className=" text-greenColor">
-                <FontAwesomeIcon icon={faFolder} />
+              <div className=" hover:text-greenColor">
+             <a href="#">   <FontAwesomeIcon icon={faFolder} /></a>
               </div>
               <div>
-                <FontAwesomeIcon icon={faGithub} />
+                <a href="#" className=" hover:text-greenColor"><FontAwesomeIcon icon={faGithub} /></a>
               </div>
             </div>
-            <div className="py-6 text-head_Color text-2xl font-bold">
+            <div className="py-4 text-head_Color text-2xl font-bold">
               {value.title}
             </div>
             <p className="py-6 text-textColor">
