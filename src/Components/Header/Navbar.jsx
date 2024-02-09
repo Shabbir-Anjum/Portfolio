@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className='bg-bgColor  flex  justify-between   text-head_Color h-24 items-center px-8  '>
         <div>
           <a href="#">
-            <img src="/src/images/logo.png" alt="error" className='w-8 h-8'/>
+            <img src="../images/logo.png" alt="error" className='w-8 h-8'/>
           </a>
         </div>
         <div className='flex transition-all ease-in-out duration-500'>

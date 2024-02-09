@@ -71,7 +71,7 @@ export default function About() {
           <AnimationControls>
               <div className=" w-64 h-96 relative bg-imageColor hover:bg-current ">
                 <img
-                  src="/src/images/Shabbiranjum.jpg"
+                  src="../images/Shabbiranjum.jpg"
                   alt="error"
                   className="w-full h-full absolute object-cover object-center mix-blend-overlay"
                 />

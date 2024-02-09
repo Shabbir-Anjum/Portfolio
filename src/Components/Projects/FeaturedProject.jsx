@@ -18,7 +18,6 @@ export default function FeaturedProject() {
           </h2>
           <hr className="md:w-[40%] inline-block ml-16 w-[50%]" />
         </div>
-       
         {/*Card */}
         {FeaturedData.map((value, index)=>(
            <AnimationControls>
@@ -51,6 +50,7 @@ export default function FeaturedProject() {
               </div>
           
             </div>
+       
            
             <div className={`${value.id==2 ? 'md:right-0 text-end' : 'md:left-2'} py-3 absolute md:w-[300px] mini:mx-8 mini:full sm:mx-8 text-head_Color top-24  xxl:[650px] xxxl:w-[740px] lg:px-8 lg:w-96 xl:w-[500px]  md:p-3 md:bg-navbgColor md:rounded-lg`}>
           
