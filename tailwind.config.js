@@ -31,11 +31,20 @@ export default {
     },
     keyframes:{
       move:{
-        '50%': {transform: 'translateY(-1rem) '}
+        '100%': {transform: 'translateY(-0.5rem) '}
+      },
+      moveX: {
+        from: {
+          width: '0'
+        },
+        to: {
+          width: '65%'
+        },
       }
     },
     animation:{
-      'movingY': 'move 2s lenear infinite'
+      'movingy': 'move 0.3s linear forwards',
+      'movingX': 'moveX 0.3s linear'
     },
     fontFamily:{
       Roboto:['Roboto', 'sans-serif']

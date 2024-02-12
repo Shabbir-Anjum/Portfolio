@@ -30,7 +30,7 @@ export default function OtherProject() {
       <div className="grid grid-cols-1 place-items-center md:grid-cols-2 gap-6 lg:grid-cols-3  my-20">
         {items.map((value, index) => (
      <AnimationControls>
-          <div className="p-6 w- bg-navbgColor rounded-md">
+          <div className=" p-6 bg-navbgColor rounded-md">
        
             <div className="flex justify-between">
               <div className=" hover:text-greenColor">

@@ -34,13 +34,13 @@ export default function FeaturedProject() {
             </div>
         
             
-            <div className={`  ${value.id==2 ? 'right-0 text-end' : ' md:left-3 '}  absolute left:3 top-2  p-8 md:p-0 text-head_Color `}>
+            <div className={`  ${value.id==2 ? 'right-0 text-end' : ' md:left-3 '}  absolute left:3 top-0  md:top-2 p-3 md:p-0 text-head_Color `}>
          
               <div className=" text-greenColor md:px-8"> Featured Project</div>
              
               <div className=" text-head_Color text-2xl font-bold md:px-8"> {value.title}</div>
            
-              <div className="pt-32 md:pt-56 md:px-8 md:py-1">{value.tools}</div>
+              <div className="pt-40 md:pt-56 md:px-8 md:py-1">{value.tools}</div>
             
        
               <div className="md:mx-6">
@@ -52,7 +52,7 @@ export default function FeaturedProject() {
             </div>
        
            
-            <div className={`${value.id==2 ? 'md:right-0 text-end' : 'md:left-2'} py-3 absolute md:w-[300px] mini:mx-8 mini:full sm:mx-8 text-head_Color top-24  xxl:[650px] xxxl:w-[740px] lg:px-8 lg:w-96 xl:w-[500px]  md:p-3 md:bg-navbgColor md:rounded-lg`}>
+            <div className={`${value.id==2 ? 'md:right-0 text-end' : 'md:left-2'} py-0 md:py-3 absolute md:w-[300px] mini:mx-3 mini:text-sm mini:full sm:mx-3 text-head_Color top-20  xxl:[650px] xxxl:w-[740px] lg:px-8 lg:w-96 xl:w-[500px]  md:p-3 md:bg-navbgColor md:rounded-lg`}>
           
              {value.projectInfo}
              

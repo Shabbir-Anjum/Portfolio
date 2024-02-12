@@ -51,7 +51,8 @@ export default function Hero() {
         </div>
         </AnimationControls>
         {/* Veritical Left Side content */}
-        <div className=" fixed left-8 z-10 lg:left-14 bottom-0  hidden md:block">
+        <AnimationControls>
+        <div className=" fixed left-8 z-10 lg:left-14 bottom-0 text-xl hidden md:block">
           <div className="py-2 hover:text-greenColor">
             <a
               href="https://github.com/Shabbir-Anjum"
@@ -77,18 +78,24 @@ export default function Hero() {
           </div>
           <div className=" border-l-2  h-36 ml-1 "></div>
         </div>
+        </AnimationControls>
       </div>
       {/* Veritical Right Side content */}
+     
+      <AnimationControls>
       <div className="fixed right-0  z-50 bottom-48 text-white hidden md:block" target="_blank">
         <div className="flex items-center">
-          <div className="py-12 transform rotate-90  origin-center">
-            <a href="mailto:marshabbir768@gmail.com" className="whitespace-nowrap hover:text-greenColor" target="_blank">
+          <div className="py-10 transform rotate-90  origin-center">
+            <a href="mailto:marshabbir768@gmail.com" className="whitespace-nowrap hover:text-greenColor text-sm" target="_blank">
               marshabbir768@gmail.com
             </a>
           </div>
         </div>
       </div>
-      <div className=" fixed right-24  bottom-0 border text-white hidden md:block border-l-2 h-36 ml-1"></div>
+      <div className=" fixed right-20  bottom-0 border text-white hidden md:block border-l-2 h-36 mr-1"></div>
+      </AnimationControls>
+     
     </>
+
   );
 }

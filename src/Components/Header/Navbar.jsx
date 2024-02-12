@@ -25,13 +25,13 @@ export default function Navbar() {
     <header className={` sticky top-0  z-50`}>
         <div className='bg-bgColor  flex  justify-between   text-head_Color h-24 items-center px-8  '>
         <div>
-          <a href="#">
+          <a href="/">
             <img src="../images/logo.png" alt="error" className='w-8 h-8'/>
           </a>
         </div>
         <div className='flex transition-all ease-in-out duration-500'>
-          <div className={`bg-navbgColor md:bg-transparent ${hide? 'block': 'hidden'}  md:static md:py-0 md:w-auto md:px-10 h-screen md:h-auto transition-all ease-in-out duration-500 md:block absolute pt-14 right-0 top-0  w-[65%] py-5 `}>
-          <ul className="flex text-center flex-col gap-10 text-sm justify-center items-center py-1  mt-1 md:flex-row transition-all ease-in-out duration-500">
+          <div className={`bg-navbgColor md:bg-transparent ${hide? 'block': 'hidden'}  md:static md:py-0 md:w-auto md:px-10 animate-movingX h-screen md:h-auto transition-all ease-in-out duration-500 md:block absolute pt-14 right-0 top-0  w-[65%] py-5 `}>
+          <ul className="flex text-center flex-col gap-10 text-sm justify-center items-center py-1  mt-1 md:flex-row ">
           <li className='md:inline-block'>
                 <div className='md:inline text-greenColor '>01.</div>
                 <a href="#about" className='nav_hover duration-500'>About</a>
