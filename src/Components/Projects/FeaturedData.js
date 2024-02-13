@@ -18,11 +18,13 @@ const FeaturedData = [
   },
   {
     id: 3,
-    title: "Router",
+    title: "Fruit Shop",
     projectInfo:
-      "I created a Router Practice Project to learn how web pages navigate. It helped me understand how to move between different parts of a website smoothly. By practicing hands-on, I got better at building websites and learned new skills for future projects.",
+      " Check out my new fruit shop project Its a cool website where you can find all sorts of yummy fruits. It's easy to use and has lots of different fruits to choose from, whether you like them from far away or right from your neighborhood Explore and enjoy your favorite fruits online",
     tools: "HTML, CSS, Javascript, React,",
-    src: "../images/router.PNG",
+    src: "../images/fruit.PNG",
+    link:'https://fruits-shop1.vercel.app/',
+    git:'https://github.com/Shabbir-Anjum/Fruit-Shop'
   },
   {
     id: 4,

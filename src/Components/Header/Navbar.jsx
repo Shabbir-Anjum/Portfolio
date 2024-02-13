@@ -30,7 +30,7 @@ export default function Navbar() {
           </a>
         </div>
         <div className='flex transition-all ease-in-out duration-500'>
-          <div className={`bg-navbgColor md:bg-transparent ${hide? 'block': 'hidden'}  md:static md:py-0 md:w-auto md:px-10 animate-movingX h-screen md:h-auto transition-all ease-in-out duration-500 md:block absolute pt-14 right-0 top-0  w-[65%] py-5 `}>
+          <div className={`bg-navbgColor md:bg-transparent ${hide? 'block': 'hidden'}  md:static md:py-0 md:w-auto md:px-10 animate-movingX h-screen md:h-auto  md:block absolute pt-14 right-0 top-0  w-[65%] py-5 `}>
           <ul className="flex text-center flex-col gap-10 text-sm justify-center items-center py-1  mt-1 md:flex-row ">
           <li className='md:inline-block'>
                 <div className='md:inline text-greenColor '>01.</div>

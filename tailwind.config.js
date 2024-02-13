@@ -27,11 +27,34 @@ export default {
         redColor: "#cc3433",
         darkColor: '#000',
         darkColorLight: "#171717",
-      }
+      },
+      backgroundImage:theme=>({
+        'conic-gradient': 'conic-gradient(#64ffda 20deg, transparent 120deg)'
+      }),
+
     },
+   
     keyframes:{
+    zoom:{ '0%': {
+      transform: 'scale(1)'
+    },
+    '25%' :{
+      transform: 'scale(0.75)'
+    },
+    '50%' :{
+      transform: 'scale(0.5)'
+    },
+    '75%' :{
+      transform:' scale(0.25)'
+    },
+   '100%' :{
+      transform: 'scale(0)'
+      },},
       move:{
         '100%': {transform: 'translateY(-0.5rem) '}
+      },
+      rotate:{
+        '100%': {transform: 'rotate(-360deg)'}
       },
       moveX: {
         from: {
@@ -42,7 +65,10 @@ export default {
         },
       }
     },
+
     animation:{
+      'zoom': 'zoom 2s 2s linear',
+      'rotate360': 'rotate 2s linear infinite',
       'movingy': 'move 0.3s linear forwards',
       'movingX': 'moveX 0.3s linear'
     },

@@ -44,7 +44,7 @@ export default function FeaturedProject() {
             
        
               <div className="md:mx-6">
-                <a href={value.link} target="_blank" className=" hover:text-greenColor"> <FontAwesomeIcon icon={faGithub} className="px-2"/></a>
+                <a href={value.git} target="_blank" className=" hover:text-greenColor"> <FontAwesomeIcon icon={faGithub} className="px-2"/></a>
                
                 <a href={value.link} target="_blank" className=" hover:text-greenColor"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className="px-2"/></a>
               </div>
@@ -52,7 +52,7 @@ export default function FeaturedProject() {
             </div>
        
            
-            <div className={`${value.id==2 ? 'md:right-0 text-end' : 'md:left-2'} py-0 md:py-3 absolute md:w-[300px] mini:text-sm mini:full sm:mx-1 text-head_Color top-20  xxl:[650px] xxxl:w-[740px] lg:px-8 lg:w-96 xl:w-[500px]  md:p-3 md:bg-navbgColor md:rounded-lg`}>
+            <div className={`${value.id==2 ? 'md:right-3 text-end' : 'md:left-8'} py-0 md:py-3 absolute md:w-[330px] mini:text-sm mini:full sm:mx-1 text-head_Color top-20  xxl:[650px] xxxl:w-[740px] lg:px-8 lg:w-96 xl:w-[500px]  md:p-3 md:bg-navbgColor md:rounded-lg`}>
           
              {value.projectInfo}
              

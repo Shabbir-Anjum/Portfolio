@@ -25,9 +25,14 @@
     .experience_nav{
         @apply py-4 px-10 border-b-2 md:border-l-2  md:border-b-0  hover:bg-navbgColor hover:border-greenColor nav_hover;
     }
-    
+    .box::before{
+      @apply content-[''] animate-rotate360 absolute w-80 h-80 bg-conic-gradient top-[-25%] left-[-25%];
+    }
+    .box::after{
+      @apply content-['S'] rounded-3xl text-greenColor justify-center items-center flex  text-9xl font-Roboto font-bold absolute w-[94%] h-[94%] top-[3%] left-[3%] bg-bgColor  
+    }
 }
 html {
     scroll-behavior: smooth;
   }
-
+ 
