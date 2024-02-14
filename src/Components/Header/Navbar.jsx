@@ -34,23 +34,23 @@ export default function Navbar() {
           <ul className="flex text-center flex-col gap-10 text-sm justify-center items-center py-1  mt-1 md:flex-row ">
           <li className='md:inline-block'>
                 <div className='md:inline text-greenColor '>01.</div>
-                <a href="#about" className='nav_hover duration-500'>About</a>
+                <a href="#about" className='nav_hover duration-500' onClick={nav_show}>About</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>02.</div>
-                <a  href="#experience" className='nav_hover duration-500'>Experience</a>
+                <a  href="#experience" className='nav_hover duration-500' onClick={nav_show}>Experience</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>03.</div>
-                <a href="#work" className='nav_hover duration-500'>Work</a>
+                <a href="#work" className='nav_hover duration-500' onClick={nav_show}>Work</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>04.</div>
-                <a href="#contact" className='nav_hover duration-500'>Contact</a>
+                <a href="#contact" className='nav_hover duration-500' onClick={nav_show}>Contact</a>
               </li>
               <li className='md:inline-block'>
                 <div className='md:inline text-greenColor'>05.</div>
-                <a href="#blog" className='nav_hover duration-500'>Blog</a>
+                <a href="#blog" className='nav_hover duration-500' onClick={nav_show}>Blog</a>
               </li>
         </ul>
             <div onClick={nav_show} className='absolute right-9 text-greenColor md:hidden text-xl top-9'>
