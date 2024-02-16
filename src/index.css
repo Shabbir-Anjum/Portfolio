@@ -29,7 +29,7 @@
       @apply content-[''] animate-rotate360 absolute w-80 h-80 bg-conic-gradient top-[-25%] left-[-25%];
     }
     .box::after{
-      @apply content-['S'] rounded-3xl text-greenColor justify-center items-center flex  text-9xl font-Roboto font-bold absolute w-[94%] h-[94%] top-[3%] left-[3%] bg-bgColor  
+      @apply content-['S'] rounded-3xl text-greenColor justify-center items-center flex  text-9xl font-Roboto font-bold absolute w-[96%] h-[96%] top-[2%] left-[2%] bg-bgColor  
     }
 }
 html {

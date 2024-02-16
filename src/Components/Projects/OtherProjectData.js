@@ -37,7 +37,7 @@ const OtherProjectData = [
   },
   {
     id: 2,
-    title: "Password",
+    title: "Router",
     projectInfo: "lorem my name is shabbir anjum and your a great teacher",
     tools: "HTML, CSS, Javascript, React",
     src: "#",
