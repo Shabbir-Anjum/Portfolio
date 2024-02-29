@@ -17,7 +17,7 @@ const FeaturedData = [
     src: "../images/Currency.PNG",
   },
   {
-    id: 3,
+    id: 1,
     title: "Fruit Shop",
     projectInfo:
       " Check out my new fruit shop project Its a cool website where you can find all sorts of yummy fruits. It's easy to use and has lots of different fruits to choose from, whether you like them from far away or right from your neighborhood Explore and enjoy your favorite fruits online",
@@ -27,7 +27,7 @@ const FeaturedData = [
     git:'https://github.com/Shabbir-Anjum/Fruit-Shop'
   },
   {
-    id: 4,
+    id: 2,
     title: "Password Generator",
     projectInfo:
       "This tool generates secure passwords with just a click, enhancing cybersecurity measures for users. It showcases my ability to create practical solutions that prioritize user security.",

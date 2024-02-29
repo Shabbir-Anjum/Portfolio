@@ -31,6 +31,7 @@
     .box::after{
       @apply content-['S'] rounded-3xl text-greenColor justify-center items-center flex  text-9xl font-Roboto font-bold absolute w-[96%] h-[96%] top-[2%] left-[2%] bg-bgColor  
     }
+
 }
 html {
     scroll-behavior: smooth;

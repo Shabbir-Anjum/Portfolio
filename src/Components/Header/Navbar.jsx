@@ -52,6 +52,9 @@ export default function Navbar() {
                 <div className='md:inline text-greenColor'>05.</div>
                 <a href="#blog" className='nav_hover duration-500' onClick={nav_show}>Blog</a>
               </li>
+              <li className='mt-2 '>
+               <a href="https://drive.google.com/file/d/1xcHDWNiMRSYtaOW_uoaQRMzTlwGM-1YB/view?usp=drive_link" target='_blank' className='btn px-10 py-3' >Resume</a>
+            </li>
         </ul>
             <div onClick={nav_show} className='absolute right-9 text-greenColor md:hidden text-xl top-9'>
               <FontAwesomeIcon icon={faX} /> 
@@ -60,9 +63,7 @@ export default function Navbar() {
           <div onClick={nav_show} className=' text-greenColor  md:hidden block text-3xl'>
               <FontAwesomeIcon icon={faBarsStaggered} /> 
             </div>
-          <div className='mt-2 hidden md:block'>
-               <a href="https://drive.google.com/file/d/1xcHDWNiMRSYtaOW_uoaQRMzTlwGM-1YB/view?usp=drive_link" target='_blank' className='btn px-10 py-3' >Resume</a>
-            </div>
+         
         </div>
       </div>
       </header>

@@ -14,6 +14,7 @@ export default function Loader() {
     <div className='flex justify-center items-center h-screen overflow-hidden'>
       <div className={` ${bgcolor? ' bg-greenColor' : ' bg-bgColor'} rounded-3xl box relative w-48 h-48 bg-bgColor overflow-hidden animate-zoom p-0 m-0`}></div>
       </div>
+     
       
     </>
   )
